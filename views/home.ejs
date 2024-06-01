@@ -14,7 +14,13 @@
     <title>HOME PAGE</title>
 </head>
 <body>
+
   <h1>URL shortener</h1>
+  <% if(locals.id){
+    %> <p>URL generated : http://localhost:8015/url/ <%=id %></p>
+   <%} %>
+
+
   <div>
     <form method="POST" action="/url">
       <label>Enetr Your Original Url</label>

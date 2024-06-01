@@ -6,5 +6,5 @@ router.post('/' , handleGenerateNewShortURL)
 
 module.exports = router;
 
-router.get('/analytics/:shortId' , )
+router.get('/analytics/:shortId' , handleGetAnalytics )
 
