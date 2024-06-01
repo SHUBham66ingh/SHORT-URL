@@ -16,7 +16,7 @@ app.use(express.json())
 app.use('/url'  , urlRoute);
 
 
-app.use("url" , urlRoute);
+app.use("/url" , urlRoute);
 app.use('/',staticRoute);
 
 
