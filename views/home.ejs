@@ -1,11 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <style>
+    body{
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+    button{
+      background-color: aqua;
+    }
+  </style>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HOME PAGE</title>
 </head>
 <body>
-  <h1>home</h1>
+  <h1>URL shortener</h1>
+  <div>
+    <form method="POST" action="/url">
+      <label>Enetr Your Original Url</label>
+      <input type="text" name="url"  placeholder="Enter The Url">
+      <button type="submit">generate the short url</button>
+    </form>
+  </div>
 </body>
 </html>

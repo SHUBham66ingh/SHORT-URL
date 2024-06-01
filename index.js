@@ -15,6 +15,8 @@ app.set('views' , path.resolve('./views'))
 app.use(express.json())
 app.use('/url'  , urlRoute);
 
+app.use(express.urlencoded({extended:false}));
+
 
 app.use("/url" , urlRoute);
 app.use('/',staticRoute);
