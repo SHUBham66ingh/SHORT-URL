@@ -33,9 +33,16 @@
      <thead>
       <th>S.no</th>
       <th>ShortId</th>
-      <th></th>
+      <th>Redirect</th>
+      <th>Clicks</th>
       </thead>
      <tbody>
+      <%urls.forEach(url, index) => {%>
+        <td><% index+1 %></td>
+        <td><% url.shortId %></td>
+        <td><% url.redirectURL %></td>
+        <td><% url.visitHistory %></td>     
+     <% })%>
       </tbody>
     </table>
 
